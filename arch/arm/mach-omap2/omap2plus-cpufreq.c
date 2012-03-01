@@ -449,7 +449,7 @@ static ssize_t store_gpu_oc(struct cpufreq_policy *policy, const char *buf, size
 		pr_info("[imoseyon] gpu_oc error - bailing\n");	
 		return size;
 	}
-	
+
 	sscanf(buf, "%d\n", &oc_val);
 	if (oc_val < 0 ) oc_val = 0;
 	if (oc_val > 2 ) oc_val = 2;
@@ -460,7 +460,7 @@ static ssize_t store_gpu_oc(struct cpufreq_policy *policy, const char *buf, size
         ret2 = opp_enable(dev, gpu_freqs[oc_val]);
         pr_info("[imoseyon] gpu top speed changed from %lu to %lu (%d,%d)\n", 
 		gpu_freqs[prev_oc], gpu_freqs[oc_val], ret1, ret2);
-	
+
 	return size;
 }
 
