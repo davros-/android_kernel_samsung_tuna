@@ -228,7 +228,7 @@ struct omap_vdd_dep_info omap446x_vddiva_dep_info[] = {
 
 static struct omap_opp_def __initdata omap446x_opp_def_list[] = {
 	/* MPU OPP1 - OPP50 */
-	OPP_INITIALIZER("mpu", "virt_dpll_mpu_ck", "mpu", true, 350000000, OMAP4460_VDD_MPU_OPP50_UV),
+	OPP_INITIALIZER("mpu", "virt_dpll_mpu_ck", "mpu", true, 300000000, OMAP4460_VDD_MPU_OPP50_UV),
 	/* MPU OPP2 - OPP100 */
 	OPP_INITIALIZER("mpu", "virt_dpll_mpu_ck", "mpu", true, 700000000, OMAP4460_VDD_MPU_OPP100_UV),
 	/* MPU OPP3 - OPP-Turbo */
@@ -236,7 +236,7 @@ static struct omap_opp_def __initdata omap446x_opp_def_list[] = {
 	/* MPU OPP4 - OPP-Nitro */
 	OPP_INITIALIZER("mpu", "virt_dpll_mpu_ck", "mpu", false, 1200000000, OMAP4460_VDD_MPU_OPPNITRO_UV),
 	/* MPU OPP4 - OPP-Nitro SpeedBin */
-	OPP_INITIALIZER("mpu", "virt_dpll_mpu_ck", "mpu", false, 1350000000, OMAP4460_VDD_MPU_OPPOVERCLOCK_UV),
+	OPP_INITIALIZER("mpu", "virt_dpll_mpu_ck", "mpu", false, 1420000000, OMAP4460_VDD_MPU_OPPOVERCLOCK_UV),
 	/* L3 OPP1 - OPP50 */
 	OPP_INITIALIZER("l3_main_1", "virt_l3_ck", "core", true, 100000000, OMAP4460_VDD_CORE_OPP50_UV),
 	/* L3 OPP2 - OPP100 */
@@ -330,7 +330,7 @@ int __init omap4_opp_init(void)
 			omap4_mpu_opp_enable(1200000000);
 		/* The tuna supports 1.35GHz */
 		if (omap4_has_mpu_1_5ghz())
-			omap4_mpu_opp_enable(1350000000);
+			omap4_mpu_opp_enable(1420000000);
 	}
 
 	return r;
