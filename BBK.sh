@@ -33,7 +33,7 @@
 
     export ARCH=arm SUBARCH=arm CROSS_COMPILE=$cco
 cp $k/arch/arm/configs/BBKconfigs/$c "$k/.config"
-	#make clean
+	make clean
 	make -j4 zImage
 # Grab modules & zImage
    echo ""
