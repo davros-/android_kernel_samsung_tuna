@@ -362,7 +362,7 @@ static int __cpuinit omap_cpu_init(struct cpufreq_policy *policy)
 	}
 
 	/* FIXME: Program the actual transition time to 10us on OMAP 4406 */
-	policy->cpuinfo.transition_latency = 10 * 1000;
+	policy->cpuinfo.transition_latency = 40 * 1000;
 
 	return 0;
 
