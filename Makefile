@@ -1,6 +1,10 @@
 VERSION = 3
 PATCHLEVEL = 0
+<<<<<<< HEAD
 SUBLEVEL = 43
+=======
+SUBLEVEL = 49
+>>>>>>> remotes/linux/linux-3.0.y
 EXTRAVERSION =
 NAME = Sneaky Weasel
 
