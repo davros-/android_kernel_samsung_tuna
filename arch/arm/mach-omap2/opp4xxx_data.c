@@ -180,13 +180,6 @@ static struct omap_opp_def __initdata omap443x_opp_def_list[] = {
 	OPP_INITIALIZER("aess", "abe_clk", "iva", true, 196608000, OMAP4430_VDD_IVA_OPP100_UV),
 };
 
-<<<<<<< HEAD
-#define OMAP4460_VDD_MPU_OPP50_UV                870000 
-#define OMAP4460_VDD_MPU_OPP100_UV              1150000
-#define OMAP4460_VDD_MPU_OPPTURBO_UV            1250000 
-#define OMAP4460_VDD_MPU_OPPNITRO_UV            1300000 
-#define OMAP4460_VDD_MPU_OPPOVERCLOCK_UV               1350000 
-=======
 #define OMAP4460_VDD_MPU_OPP50_UV                870000 //307
 #define OMAP4460_VDD_MPU_OPP100_UV              1020000 //691 @ TNP
 #define OMAP4460_VDD_MPU_OPPTURBO_UV            1090000 //1036 @ TNP
@@ -204,12 +197,7 @@ static struct omap_opp_def __initdata omap443x_opp_def_list[] = {
 #ifdef CONFIG_OMAP_OCFREQ_2000
 #define OMAP4460_VDD_MPU_OPPNITRO_UV_OC2000 1410000
 #endif
-<<<<<<< HEAD
->>>>>>> 2f32e1a... multiple additions from Ezekeel:
-
-=======
 #ifdef CONFIG_OMAP_SMARTREFLEX_CUSTOM_SENSOR
->>>>>>> 1c75a9b... fix build
 struct omap_volt_data omap446x_vdd_mpu_volt_data[] = {
 	VOLT_DATA_DEFINE(OMAP4460_VDD_MPU_OPP50_UV, 10000, OMAP44XX_CONTROL_FUSE_MPU_OPP50, 0, 0, 0xf4, 0x0c, OMAP_ABB_NOMINAL_OPP),
 	VOLT_DATA_DEFINE(OMAP4460_VDD_MPU_OPP100_UV, 0, OMAP44XX_CONTROL_FUSE_MPU_OPP100, 0, 0, 0xf9, 0x16, OMAP_ABB_NOMINAL_OPP),
