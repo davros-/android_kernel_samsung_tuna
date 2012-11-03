@@ -390,7 +390,7 @@ config OMAP4_PPA_CPU1_ONLINE_BUG
 	  If, on the other hand, you do not understand the change, leave the
 	  default as enabled.
 
-onfig OMAP_SCALING_FREQS
+config OMAP_SCALING_FREQS
           bool "Enable support for showing the available CPU frequencies"
           default y
           help
