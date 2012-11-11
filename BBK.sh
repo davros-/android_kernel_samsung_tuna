@@ -9,6 +9,7 @@
   t=$k/tools/bbk
 # Export betas to your dropbox
   db=~/kernel
+  db=~/Dropbox/kernel
 
 # Date to add to zip
   today=$(date +"%m_%d_%Y")
